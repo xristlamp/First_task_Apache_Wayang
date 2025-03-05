@@ -1,2 +1,4 @@
 task\SimpleWordCount.class
 task\App.class
+task\WayangWordCount.class
+task\WayangWordCount$Tuple.class
