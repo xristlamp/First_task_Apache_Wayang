@@ -24,7 +24,7 @@ public class WayangWordCount {
         // Read file content into a list of lines
         Collection<String> lines = Files.readAllLines(Paths.get(args[0]));
 
-        // Initialize Wayang context
+        
         WayangContext wayangContext = new WayangContext(new Configuration())
                 .withPlugin(Java.basicPlugin());
 
@@ -45,9 +45,7 @@ public class WayangWordCount {
                 .forEach(result -> System.out.println(result.field0 + ": " + result.field1));
     }
 
-    /**
-     * Simple tuple class since Wayang doesn’t have Scala's Tuple2 directly.
-     */
+   
     public static class Tuple<T0, T1> {
         public final T0 field0;
         public final T1 field1;

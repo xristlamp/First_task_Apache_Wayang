@@ -10,7 +10,7 @@ import java.util.List;
 
 public class WayangPiEstimation {
     public static void main(String[] args) {
-        // Initialize WayangContext with Java backend
+        
         WayangContext wayangContext = new WayangContext(new Configuration())
                 .withPlugin(Java.basicPlugin());
 

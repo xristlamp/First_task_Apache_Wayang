@@ -10,12 +10,10 @@ import java.util.Collection;
 
 public class SimpleWordCount {
     public static void main(String[] args) {
-        // Initialize Wayang context with Java platform
         Configuration configuration = new Configuration();
         WayangContext wayangContext = new WayangContext(configuration)
                 .withPlugin(Java.basicPlugin());
 
-        // Create a JavaPlanBuilder
         JavaPlanBuilder planBuilder = new JavaPlanBuilder(wayangContext)
                 .withJobName("Simple Wayang Filter Example");
 
@@ -28,7 +26,6 @@ public class SimpleWordCount {
                 .filter(num -> num > 5)            // Filter numbers greater than 5
                 .collect();                        // Collect the results
 
-        // Print the results
         System.out.println("Numbers greater than 5: " + result);
     }
 }
